@@ -2,72 +2,9 @@
 <html>
 <head>
     <script src="phaser.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-
-    <script>
-        const queryString = window.location.search.substring(1);
-        var decodedStringAtoB = atob(queryString);
-        
-        const obj = JSON.parse(decodedStringAtoB);
-        console.log(obj);
-    var config = {
-        type: Phaser.AUTO,
-        width: 1024,
-        height: 768,
-        scene: {
-            preload: preload,
-            create: create
-        }
-    };
-
-    var game = new Phaser.Game(config);
-
-    function preload ()
-    {
-
-    }
-
-    function create ()
-    {
-        var pcEntry = this.add.text(10, 10, 'Hej '+obj.name+ '!', { font: '24px Courier', fill: '#ffffff' }).setWordWrapWidth(1024);
-        var pcEntry2 = this.add.text(10, 40, 'Hvad er 2+2 ?', { font: '24px Courier', fill: '#ffffff' }).setWordWrapWidth(1024);
-        var textEntry = this.add.text(10, 80, '', { font: '24px Courier', fill: '#ffff00' }).setWordWrapWidth(1024);
-        var newInput = "";
-        this.input.keyboard.on('keydown', function (event) {
-            //console.log(event.keyCode)
-            if (event.keyCode === 8 && textEntry.text.length > 0)
-            {
-                //textEntry.text = textEntry.text.substr(0, textEntry.text.length - 1);
-                newInput = textEntry.text.substr(0, textEntry.text.length - 1);
-            }
-            else if (event.keyCode === 32 || (event.keyCode >= 48 && event.keyCode < 90))
-            {
-                //textEntry.text += event.key;
-                newInput += event.key;
-            }
-            else if (event.keyCode === 13){
-                
-                pcEntry.text = validateInput(textEntry.text);
-                newInput = "";
-            }
-            textEntry.text = newInput;
-        });
-    }
-    function validateInput(input)
-    {
-        switch(input) {
-            case "4":
-                return input +" er rigtig";
-            case "y":
-                // code block
-                break;
-            default:
-                return "Jeg kender ikke til: "+input;
-        }
-        return input;
-    }
-    </script>
 
 </body>
 </html>

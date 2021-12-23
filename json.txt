@@ -1,19 +1,19 @@
 {
 	"name": "Johan",
 	"questions": [{
-		"q1": "Hvad er 2+2?",
-		"a1": "4"
+		"q": "Hvad er 2+2?",
+		"a": "4"
 	}, {
-		"q2": "Hvad er 3+3?",
-		"a2": "6"
+		"q": "Hvad er 3+3?",
+		"a": "6"
 	}, {
-		"q3": "Hvad er 45*45?",
-		"a3": "6"
+		"q": "Hvad er 45*45?",
+		"a": "2025"
 	}, {
-		"q4": "Hvad er jordens omkreds i km?",
-		"a4": "45075"
+		"q": "Hvad er jordens omkreds i km?",
+		"a": "45075"
 	}, {
-		"q5": "Hvor gammel er jeres onkel Kasper?",
-		"a5": "32"
+		"q": "Hvor gammel er jeres onkel Kasper?",
+		"a": "32"
 	}]
 }
