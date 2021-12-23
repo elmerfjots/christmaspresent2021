@@ -1,5 +1,6 @@
 {
 	"name": "Johan",
+	"kode": "1337",
 	"questions": [{
 		"q": "Hvad er 2+2?",
 		"a": "4"
@@ -13,7 +14,7 @@
 		"q": "Hvad er jordens omkreds i km?",
 		"a": "45075"
 	}, {
-		"q": "Hvor gammel er jeres onkel Kasper?",
+		"q": "Hvor gammel er onkel Kasper?",
 		"a": "32"
 	}]
 }
