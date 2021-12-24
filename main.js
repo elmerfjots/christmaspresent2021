@@ -97,19 +97,6 @@ height: 768,
 var game = new Phaser.Game(config);
 game.scene.add('myScene', myScene, true);
 
-function validateInput(input)
-{
-switch(input) {
-    case "4":
-        return input +" er rigtig";
-    case "y":
-        // code block
-        break;
-    default:
-        return "Jeg kender ikke til: "+input;
-}
-return input;
-}
 function getUrlParameters(){
     const queryString = window.location.search.substring(1);
     var jsonObj = null;
