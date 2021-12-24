@@ -29,11 +29,12 @@ class myScene extends Phaser.Scene {
         
         this.input.keyboard.on('keydown', function (event) {
             if(done ===false){
+                console.log(event.keyCode)
                 if (event.keyCode === 8 && textEntry.text.length > 0)
                 {
                     newInput = textEntry.text.substr(0, textEntry.text.length - 1);
                 }
-                else if (event.keyCode === 32 || (event.keyCode >= 48 && event.keyCode < 90))
+                else if (event.keyCode === 32 || event.keyCode === 188 || event.keyCode === 190 || (event.keyCode >= 48 && event.keyCode < 90))
                 {
                     newInput += event.key;
                 }
@@ -86,11 +87,7 @@ var config = {
 type: Phaser.AUTO,
 width: 1024,
 height: 768,
-// scene: {
-//     preload: preload,
-//     create: create,
-//     update: update,
-// }
+parent: 'phaser-canvas'
 };
 
 
