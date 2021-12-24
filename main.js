@@ -45,7 +45,7 @@ class myScene extends Phaser.Scene {
                             done = true;
                             questTextEntry.text = "";
                             textEntry.text = "";
-                            message.text = "Fedt! Du kom igennem!!!\nDu skal sende følgende kode ["+jsonObj.kode+ "] som sms til jeres onkel";
+                            message.text = "Fedt! Du kom igennem!!!\nDu skal sende følgende kode ["+jsonObj.kode+ "] som sms, eller på discord til jeres onkel";
                             return;
                         }
                         currentQuestion = jsonObj.questions[cnt];
